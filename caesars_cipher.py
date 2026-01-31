@@ -42,9 +42,9 @@ def cesar_decifrar(text, shift):
 
     return ''.join(resultado)
 
-
-print("Texto: "+ text)
-cifrado = cesar_cifrar(text, shift)
-print("Cifrado: " + cifrado)
-decifrado = cesar_decifrar(cifrado, shift)
-print("Decifrado: " + decifrado)
+if __name__ == "__main__":
+    print("Texto: "+ text)
+    cifrado = cesar_cifrar(text, shift)
+    print("Cifrado: " + cifrado)
+    decifrado = cesar_decifrar(cifrado, shift)
+    print("Decifrado: " + decifrado)

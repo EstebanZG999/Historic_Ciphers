@@ -23,7 +23,7 @@ def vigenere_cifrar(texto, llave):
         
     return ''.join(resultado)
 
-def vigenere_decifrar(texto, llave):
+def vigenere_descifrar(texto, llave):
     resultado = []
     llave = llave.lower()
     indice_clave = 0
@@ -44,6 +44,6 @@ def vigenere_decifrar(texto, llave):
 
 print("Texto: " + texto)
 cifrar = vigenere_cifrar(texto, llave)
-decifrar = vigenere_decifrar(cifrar, llave)
+descifrar = vigenere_descifrar(cifrar, llave)
 print("Cifrado: " + cifrar)
-print("Decifrado: " + decifrar)
+print("Decifrado: " + descifrar)

@@ -23,7 +23,7 @@ def cesar_cifrar(text, shift):
 
     return ''.join(resultado)
 
-def cesar_decifrar(text, shift):
+def cesar_descifrar(text, shift):
     resultado = []
     k = shift % 26
     for c in text:
@@ -46,5 +46,5 @@ if __name__ == "__main__":
     print("Texto: "+ text)
     cifrado = cesar_cifrar(text, shift)
     print("Cifrado: " + cifrado)
-    decifrado = cesar_decifrar(cifrado, shift)
+    decifrado = cesar_descifrar(cifrado, shift)
     print("Decifrado: " + decifrado)
